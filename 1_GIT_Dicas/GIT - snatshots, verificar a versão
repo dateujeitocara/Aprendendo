@@ -1,0 +1,26 @@
+
+
+-   VERIFICAR A VERSAO (como era o arquivo antes)
+    cada commit tem um numero associado a ele
+
+    >> git checkout <numero do commit>
+
+    ele volta toda sua pasta, todos arquivos
+    para a versao em que estavam na epoca desse commit
+    incluindo a ausencia de arquivos que vc nem tinha criado
+    ou a presençã de arquivos que vc teria apagado depois
+
+
+-   VOLTAR PARA A VERSAO EM QUE ESTAVAMOS ANTES DO checkout
+
+
+    método 1 -  usando o numero do ultimo commit
+
+                >> git checkout <ultimo numero>
+
+
+    método 2 -  usando a palavra master
+
+                >> git checkout master
+
+
