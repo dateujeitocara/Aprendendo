@@ -1,4 +1,14 @@
+Se vc já está dentro do repositório
+basta fazer
 
+
+	>> git push -u origin master
+
+
+ele pedirá email e senha
+
+
+----------------------------------------------------------------------
 
 -   ENVIANDO PROJETOS
 
