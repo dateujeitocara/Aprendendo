@@ -1,0 +1,61 @@
+
+////////////                             ////////////
+/////////       VARIAVEIS DE AMBIENTE       /////////
+////////////                             ////////////
+
+AULA BOSON 
+https://www.youtube.com/watch?v=KeDhlDXezMs&list=PLucm8g_ezqNrQmqtO0qmew8sKXEEcaHvc&index=2&t=1s
+
+----------------------------------------
+COPIAR  O CAMINHO DO JDK
+----------------------------------------
+
+        arquivos de programas
+        java 
+        jdk1.8....
+        bin
+
+
+----------------------------------------
+ABRINDO AS CONFIGURAÇÕES
+----------------------------------------
+
+        computador
+        propriedades
+        configurações avançadas do sistema
+        variaveis de ambiente 
+        
+----------------------------------------
+CRIANDO PATH  (se não tiver)
+----------------------------------------
+
+         novo 
+         nome:              Path 
+         valor da variavel: colar caminho do jdk 
+
+
+----------------------------------------
+CRESCENTANDO NO PATH  (ja existente)
+----------------------------------------
+
+         editar
+         valor da variavel: 
+         ponto e vírgula no final para separar (;)
+         colar caminho do jdk 
+         ok em tudo
+
+----------------------------------------
+TESTANDO
+----------------------------------------
+
+         abrir prompt DOS 
+         digitar JAVAC
+
+
+
+
+
+
+
+
+

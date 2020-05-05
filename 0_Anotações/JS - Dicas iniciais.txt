@@ -1,0 +1,27 @@
+
+////////////                  ////////////
+/////////          JS           /////////
+////////////                 ////////////
+
+Primeiras dicas de JAVASCRIPT
+
+
+----------------------------------------
+Baixe a versão Communit no Site
+----------------------------------------
+
+        https://www.jetbrains.com/pycharm/download
+
+
+----------------------------------------
+Descompacte e instale
+----------------------------------------
+
+    Dentro da pasta BIN
+
+        sudo ./pycharm.sh 
+
+    siga os passos da instalação
+
+
+                

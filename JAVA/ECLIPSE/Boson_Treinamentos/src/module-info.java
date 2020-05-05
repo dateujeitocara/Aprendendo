@@ -1,0 +1,2 @@
+module Boson_Treinamentos {
+}
