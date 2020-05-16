@@ -1,0 +1,201 @@
+
+
+-   INICIAR REPOSTITORIO DENTRO DA PASTA
+
+    >> git init
+
+
+
+
+-   STATUS DO REPOSTITORIO  
+
+    >> git STATUS
+
+
+
+-   INDICAR ARQUIVO PARA RASTREAMENTO (staging)
+
+    >> git add <nome do arquivo>
+
+
+
+-   INDICAR TODOS OS ARQUIVOS NOVOS e ARLTERADOS (staging)
+
+    >> git add .
+
+
+
+-   INDICAR TODOS SOMENTE OS ARQUIVOS ALTERADOS (staging)
+
+    >> git add -u
+
+
+
+
+-   GRAVAR COM MENSAGEM (staging) ----> (head)
+
+    >> git commit -m "mensagem de gravação"
+
+
+
+-   VERIFICAR O HISTORICO 
+
+    >> git log
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+        STACKOVERFLOW - DICAS
+////////////////////////////////////////////////////////////////////////
+
+
+-   DIFERENÇA ENTRE OS COMANDOS 
+
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+|               |       |   Arquivos  |           |                                                                        |
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+| Comando       | Novos | Modificados | Removidos |                                                                        |
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+| git add --all |   X   |      X      |     X     | Coloca todos arquivos (novos, modificados e removidos) no index/stage  |
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+| git add .     |   X   |      X      |           | Coloca no Stage apenas arquivos novos e modificados                    |
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+| git add -u    |       |      X      |     X     | Coloca no Stage apenas arquivos modificados e removidos                |
++---------------+-------+-------------+-----------+------------------------------------------------------------------------+
+
+No Git versão 2.x:
+
++---------------+-------+-------------+-----------+-----------------------------------------------------------------------+
+|               |       |   Arquivos  |           |                                                                       |
++---------------+-------+-------------+-----------+-----------------------------------------------------------------------+
+| Comando       | Novos | Modificados | Removidos |                                                                       |
++---------------+-------+-------------+-----------+-----------------------------------------------------------------------+
+| git add --all |   X   |      X      |     X     | Coloca todos arquivos (novos, modificados e removidos) no index/stage |
++---------------+-------+-------------+-----------+-----------------------------------------------------------------------+
+| git add .     |   X   |      X      |     X     | Coloca todos arquivos (novos, modificados e removidos) no index/stage¹|
++---------------+-------+-------------+-----------+-----------------------------------------------------------------------+
+| git add -u    |       |      X      |     X     | Coloca no Stage apenas arquivos modificados e removidos               |
++---------------+-------+-------------+-----------
+
+
+
+
+    Ficou ainda em dúvida também em 
+    relação ao git add -u e git add *  ???
+
+O primeiro comando, obedecendo a tabela 
+acima, irá adicionar os arquivos 
+incluindo aqueles que começam com .. 
+O git add * irá adicionar todos os 
+arquivos da mesma forma que o git add .,
+ mas ignorando os arquivos que começam com ..
+
+1. O git add . adiciona apenas novos arquivos 
+que estão no diretório atual. 
+Se você tem um novo diretório , o git add -A 
+vai adicionar este diretório 
+no stage mas o git add . não fará isto.
+
+
+OUTRA OPINIÃO
+/////////////
+
+Os comandos git add --all e git add ., 
+podem parecer iguais mas fazem ações bem diferentes:
+
+    git add --all: adiciona ao staging arquivos 
+    desde a raiz do repositório passando por todos 
+    os subdiretórios, e aqui está a diferença, 
+    não importa se você está na raiz ou no sub-diretório.
+
+    git add .: usando o ponto, será adicionado ao 
+    stagging somente os arquivos a partir do diretório 
+    que você está, e os sub-diretórios deste.
+
+
+Exemplo:
+
+Usando a seguinte estrutura de arquivos e pastas como exemplo:
+
+.
+.gitignore
+src
+├── Controllers
+│   └── HomeController.cs
+├── HelloWorld.csproj
+├── Models
+│   └── ErrorViewModel.cs
+├── Program.cs
+├── Properties
+│   └── launchSettings.json
+├── Startup.cs
+├── Views
+│   ├── Home
+│   │   ├── About.cshtml
+│   │   ├── Contact.cshtml
+│   │   ├── Index.cshtml
+│   │   └── Privacy.cshtml
+
+
+Considerando que somente o .gitignore está 
+versionado no repositório, se você estiver 
+no diretório src/Views/Home e executar:
+
+
+git add .
+
+
+Serão adicionados os arquivos: 
+About.cshtml, Contact.cshtml, Index.cshtml 
+e Privacy.cshtml. Mas não serão adicionados 
+os arquivos de outros diretórios, por exemplo: 
+HomeController.cs, que está no diretório src/Controllers/.
+
+    git add *: vai funcionar exatamente igual 
+    ao comando anterior, adicionando somente 
+    os arquivos da pasta corrente ao que o 
+    comando foi executado.
+
+    git add -u, ou git add --update vai fazer 
+    um update na stagging nos arquivos que já 
+    estão sendo rastreados pelo Git.
+
+
+Continuando a usar o exemplo anterior, 
+depois de executar o git add . e em seguida 
+git commit -m "Primeiro", ainda existirão 
+arquivos a serem adicionados ao respositório; 
+então, edita-se o arquivo About.cshtml. 
+Executando um git status, o estado do repositório será:
+
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   About.cshtml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../Controllers/
+        ../../HelloWorld.csproj
+        ../../Models/
+        ../../Program.cs
+        ../../Properties/
+        ../../Startup.cs
+        ../Shared/
+        ../_ViewImports.cshtml
+        ../_ViewStart.cshtml
+        ../../appsettings.Development.json
+        ../../appsettings.json
+        ../../wwwroot/
+
+Executando o comando git add -u, 
+somente o arquivo About.cshtml é colocado 
+na área de staging, os outros arquivos que 
+ainda não estão no repositório continuam como 
+não rastreados pelo Git. Esse comando vai funcionar 
+tanto para arquivos modificados como para apagados.

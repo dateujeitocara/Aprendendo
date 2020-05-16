@@ -1,0 +1,88 @@
+------------------------------------------------------------------------------------------
+Iniciar REPOSITÓRIO
+------------------------------------------------------------------------------------------
+
+
+	$ git init
+				- Ecolha ou crie uma pasta e situe-se dentro dela:
+				- execute do (git ini) e pronto
+				- isso vai criar uma pasta oculpa .git
+
+------------------------------------------------------------------------------------------
+Prefiro CLONAR
+------------------------------------------------------------------------------------------
+
+
+	$ git clone << url do repositorio >>
+
+
+
+				- prefiro fazer o REPOSITORIO
+				  diretamente lá no GITHUB
+				  e depois escolher a pasta no meu PC
+				  com calma e clonar dentro e 
+				  ir adicionando, commitando e subindo
+				  arquivos e atualizando o GITHUB
+
+
+------------------------------------------------------------------------------------------
+CONFIGURAR na sua máquina
+------------------------------------------------------------------------------------------
+
+
+	$ git config --global user.name "fulano de tal"
+	$ git config --global user.email "email do fulano"
+
+
+- verificando
+
+	$ git config --list
+
+
+
+
+------------------------------------------------------------------------------------------
+Estado do REPOSITÓRIO
+------------------------------------------------------------------------------------------
+
+
+	$ git status
+
+
+------------------------------------------------------------------------------------------
+Adicionar na STAGING AREA
+------------------------------------------------------------------------------------------
+
+
+	$ git add .
+
+
+				- isso passa todos a seus arquivos do
+				  WORKING DIRECTORY (sua pasta) para
+				  STAGING AREA (intermediária)
+
+------------------------------------------------------------------------------------------
+COMITAR
+------------------------------------------------------------------------------------------
+
+	$ git commit - m "mensagem que identifica o commit"
+
+				
+
+				- isso transporta todos a seus arquivos da
+				  STAGING AREA (intermediária) para
+				  GIT DIRECTORY (área definitiva)
+				  mas ainda não é o GITHUB
+				  é um local na sua própria máquina
+
+------------------------------------------------------------------------------------------
+Atualizar o GITHUB
+------------------------------------------------------------------------------------------
+
+
+	$ git push -u origin master
+
+				
+				- Ele vai pedir EMAIL e SENHA
+				  e prontinho... já está atualizado
+

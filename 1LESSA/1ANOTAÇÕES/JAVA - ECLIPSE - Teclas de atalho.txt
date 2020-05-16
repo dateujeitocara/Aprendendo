@@ -1,0 +1,27 @@
+
+////////////                               ////////////
+/////////      Eclipse Teclas de atalho     /////////
+////////////                               ////////////
+
+APOSTILA CAELUM
+https://www.caelum.com.br/apostila-java-orientacao-objetos/eclipse-ide/#pequenos-truques
+
+
+----------------------------------------
+ALTERAR TECLAS
+----------------------------------------
+
+        menu Window > 
+		Preferences > 
+		General > 
+		Editors > 
+		Keys
+
+----------------------------------------
+DUPLICAR LINHAS
+----------------------------------------
+
+        ORIGINAL:		SHIFT+ALT+DOWN
+	VITOR LESSA:	SHIFT+ALT+Ç
+
+        

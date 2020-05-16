@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostra Data</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"> <img src="./img/icone.png" alt=""></label>
+    <div class="barra">
+
+        <nav>
+            <a href="index.html"><div class="link">Início</div></a>
+            <a href="Aula_001a_Home_Date.html"><div class="link">JS (Mostra Data) </div></a>
+            <a href="Aula_002a_Introduction_MudaTexto.html"><div class="link">JS (Muda Texto)</div></a>
+            <a href="Aula_002b_Introduction_MudaEstilo.html"><div class="link">JS (Muda Estilo)</div></a>
+            <a href="Aula_002c_Lampada.html"><div class="link">JS (Lâmpada)</div></a>
+        </nav>
+
+    </div>
+    
+<div class="centro">
+    <div class="fonte">
+        <p>Fonte: <spam>w3schools.com</spam> </p>
+    </div>
+    
+
+    <h1>Botões Ligam e Desligam Lâmpada</h1>
+    <h3>Elementos usados: </h3> 
+    <div class="subtit">
+        <ul>
+            <li>getElementById</li>
+            <li>img</li>
+            <li>src</li>
+            <li>onClick</li>
+            <li>Function</li>
+            
+        </ul>
+
+    </div>
+   
+
+    <div class="explica">
+
+        <h4>O Javascript Pode mudar Valores de Atributos HTML</h4>
+        <p>Nesse exemplo o Javascript pode mudar o valor do atributo <b>src</b> da tag <b>img</b>:</p>
+
+        <br><br><h4>Código:</h4>
+        <img src="./img/Aula_002c_Lampada.png" alt="">
+    </div>
+
+    <button onclick="ligarLamp()">Ligar Lâmpada</button>
+    <img id="lampada" style="width: 100px;" src="./img/lampApagada.gif" alt="">
+    <button onclick="desligarLamp()">Desligar Lâmpada</button>
+
+
+</div>
+    
+
+    <script>
+        function ligarLamp(){
+            document.getElementById("lampada").src = './img/lampAcesa.gif';
+        }
+        function desligarLamp(){
+            document.getElementById("lampada").src = './img/lampApagada.gif';
+        }
+    </script>
+    
+</body>
+</html>

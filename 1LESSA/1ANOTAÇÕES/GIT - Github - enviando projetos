@@ -1,0 +1,53 @@
+Se vc já está dentro do repositório
+basta fazer
+
+
+	>> git push -u origin master
+
+
+ele pedirá email e senha
+
+
+----------------------------------------------------------------------
+
+-   ENVIANDO PROJETOS
+
+    1   VERIFICAR SE UMA PASTA TEM GIT
+        se aparecer um arquivo .git 
+        significa que tem git nessa pasta
+
+        >> ls -la
+
+
+    2   CRIAR NOVO REPOSITORIO NO GITHUB
+        pode criar um arquivo README.md ou não
+
+
+    3   COPIAR A LINHA DE PUSH QUE O GITHUB FORNECE
+
+        >> git remote add origin <url dada pelo github>
+        
+
+    4   ENVIAR CONTEUDO DO SEU PC PARA O GITHUB
+
+        4.1 SE SEU DIRETORIO TEM IDENTIFICAÇÃO IGUAL A DO GITHUB 
+            USE O PARAMETRO -U  
+
+            >> git push -u origin master
+
+
+        4.2 SE O USUARIO DO SEU COMPUTADOR FOR DIFERENTE DO 
+            USUARIO DO GITHUB, NÃO USE O PARAMETRO -UMA
+
+            >> git push origin master 
+
+            ele vai pedir USUARIO e SENHA
+
+    5   
+
+    6   
+
+    7   
+    
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostra Data</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"> <img src="./img/icone.png" alt=""></label>
+    <div class="barra">
+
+        <nav>
+            <a href="index.html"><div class="link">Início</div></a>
+            <a href="Aula_001a_Home_Date.html"><div class="link">JS (Mostra Data) </div></a>
+            <a href="Aula_002a_Introduction_MudaTexto.html"><div class="link">JS (Muda Texto)</div></a>
+            <a href="Aula_002b_Introduction_MudaEstilo.html"><div class="link">JS (Muda Estilo)</div></a>
+        </nav>
+
+    </div>
+    
+<div class="centro">
+    <div class="fonte">
+        <p>Fonte: <spam>w3schools.com</spam> </p>
+    </div>
+    
+
+    <h1>Aulas de Javascript</h1>
+   
+        <img style="width: 80%;" src="./img/javascript_animado.gif" alt="">
+    
+
+</div>
+    
+
+    <script>
+        function dataAtual(){
+            document.getElementById("mostraData").innerHTML = Date();
+        }
+    </script>
+    
+</body>
+</html>

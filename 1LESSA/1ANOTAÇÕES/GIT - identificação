@@ -1,0 +1,12 @@
+
+
+-   IDENTIFICAR O USUÁRIO DO GIT
+
+    >> git config --global user.name "fulano de tal"
+    >> git config --global user.email "email do fulano"
+
+
+- VERIFICAÇÃO
+
+    >> git config --list
+

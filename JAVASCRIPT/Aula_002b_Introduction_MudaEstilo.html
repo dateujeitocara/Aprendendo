@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda Texto</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"> <img src="./img/icone.png" alt=""></label>
+    <div class="barra">
+
+        <nav>
+            <a href="index.html"><div class="link">Início</div></a>
+            <a href="Aula_001a_Home_Date.html"><div class="link">JS (Mostra Data) </div></a>
+            <a href="Aula_002a_Introduction_MudaTexto.html"><div class="link">JS (Muda Texto)</div></a>
+            <a href="Aula_002b_Introduction_MudaEstilo.html"><div class="link">JS (Muda Estilo)</div></a>
+            <a href="Aula_002c_Lampada.html"><div class="link">JS (Lâmpada)</div></a>
+        </nav>
+
+    </div>
+    
+<div class="centro">
+    <div class="fonte">
+        <p>Fonte: <spam>w3schools.com</spam> </p>
+    </div>
+
+    <h1>Botão Muda Estilo</h1>
+    <h3>Elementos usados: </h3> 
+    <div class="subtit">
+        <ul>
+            <li>getElementById</li>
+            <li>innerHTML</li>
+            <li>onClick</li>
+            <li>Function</li>
+        </ul>
+
+    </div>
+   
+  
+     
+    <div class="explica">
+        
+        <h4>O JavaScript pode fazer mudanças <br> no estilo CSS</h4>
+        
+        <p>A mudança no estilo do HTML é apenas uma variante da mudança em um atributo do HTML (só que, dessa vez, comandado pelo CSS). 
+            O exemplo abaixo usa o método para "encontrar" um elemento HTML que possui o id="<b>texto</b>") e muda o estilo CSS do elemento (usando .style.color) para uma nova cor "<i>red":</p>
+
+        <br><br><h4>Código:</h4>
+        <img src="./img/Aula_002c_Introduction_MudaEstilo.png" alt="">
+    </div>
+    <button onclick="MudaTexto()">Mudar o Texto</button>
+    <button onclick="MudaCor()">Cor VERMELHA</button>
+    <button onclick="Original()">Original</button><br><br>
+    <p id="texto">Esse texto vai mudar</p>
+
+</div>
+    
+
+    <script>
+        function MudaTexto(){
+            document.getElementById("texto").innerHTML = "O texto foi Mudado - VOCÊ PERCEBEU?";
+        }
+
+        function MudaCor(){
+            document.getElementById("texto").style.color = 'red';
+        }
+
+        function Original(){
+            document.getElementById("texto").innerHTML = "Esse texto vai mudar";
+            document.getElementById("texto").style.color = 'grey';
+        }
+    </script>
+    
+</body>
+</html>

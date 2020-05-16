@@ -1,0 +1,26 @@
+
+////////////                             ////////////
+/////////      VERSÕES JAVA INSTALADAS      /////////
+////////////                             ////////////
+
+LINK
+https://www.devmedia.com.br/descobrindo-a-jdk-e-atualizando-no-linux/23881
+
+SABER VERSÃO ATIVA
+----------------------------------------
+
+        java -version
+
+
+----------------------------------------
+ALTERAR A VERSÃO
+----------------------------------------
+
+        sudo update-alternatives --config java
+
+vai mostrar as 
+versões e opções 
+para mudar
+
+
+        

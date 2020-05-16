@@ -1,0 +1,24 @@
+
+
+-   CLONANDO
+
+    1   ir ate o projeto que deseja clonar
+    2   clicar no botao verde de clonar
+    3   copiar a url
+    4   ir ate o terminal 
+        e colar junto com o comando clone
+
+        >> git clone <url>
+
+    5   o git vai fazer o download do projeto
+
+    6   o projeto de quem vc clonou pode ter vários commits
+        logo, quando fizer git log 
+        vai iniciar uma rolagem
+        para sair da rolagem
+        digite Q 
+
+    7   
+    
+
+

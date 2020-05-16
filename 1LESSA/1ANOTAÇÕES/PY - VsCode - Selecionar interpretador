@@ -1,0 +1,13 @@
+////////////                   ////////////
+/////////    Python VSCODE        /////////
+////////////                   ////////////
+
+Configurar o interpretador dentro do VSCODE
+
+----------------------------------------
+No  Command Palette 
+----------------------------------------
+
+        ctrl + shift + p 
+        
+        Python: Select Interpreter

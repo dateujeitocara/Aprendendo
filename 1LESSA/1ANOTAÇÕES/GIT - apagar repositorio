@@ -1,0 +1,9 @@
+
+
+-   APAGAR REPOSITORIO
+    BASTA APAGAR ARQUIVO .git 
+    DE MANEIRA RECURSIVA
+
+    >> rm -rf .git
+
+

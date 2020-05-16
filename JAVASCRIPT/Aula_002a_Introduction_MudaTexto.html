@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda Texto</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"> <img src="./img/icone.png" alt=""></label>
+    <div class="barra">
+
+        <nav>
+            <a href="index.html"><div class="link">Início</div></a>
+            <a href="Aula_001a_Home_Date.html"><div class="link">JS (Mostra Data) </div></a>
+            <a href="Aula_002a_Introduction_MudaTexto.html"><div class="link">JS (Muda Texto)</div></a>
+            <a href="Aula_002b_Introduction_MudaEstilo.html"><div class="link">JS (Muda Estilo)</div></a>
+            <a href="Aula_002c_Lampada.html"><div class="link">JS (Lâmpada)</div></a>
+        </nav>
+
+    </div>
+    
+<div class="centro">
+    <div class="fonte">
+        <p>Fonte: <spam>w3schools.com</spam> </p>
+    </div>
+
+    <h1>Botão Muda Texto</h1>
+    <h3>Elementos usados: </h3> 
+    <div class="subtit">
+        <ul>
+            <li>getElementById</li>
+            <li>innerHTML</li>
+            <li>onClick</li>
+            <li>Function</li>
+        </ul>
+
+    </div>
+   
+  
+     
+    <div class="explica">
+        
+        <h4>O JavaScript pode fazer mudanças <br> em no conteúdo de uma tag HTML</h4>
+        
+        <p>Um dos muitos métodos HTML do JavaScript HTML methods é o getElementById().
+            O exemplo abaixo usa o método para "encontrar" um elemento HTML que possui o id="<b>mudaTexto</b>") e muda o conteúdo do elemento (usando innerHTML) para o novo texto "<i>O texto foi Mudado - VOCÊ PERCEBEU?</i>":</p>
+
+        <br><br><h4>Código:</h4>
+        <img src="./img/Aula_002a_Introduction_MudaTexto.png.png" alt="">
+    </div>
+    <button onclick="MudaTexto()">Mudar o Texto</button>
+    <button onclick="Original()">Original</button><br><br>
+    <p id="mudaTexto">Esse texto vai mudar</p>
+
+</div>
+    
+
+    <script>
+        function MudaTexto(){
+            document.getElementById("mudaTexto").innerHTML = "O texto foi Mudado - VOCÊ PERCEBEU?";
+        }
+
+        function Original(){
+            document.getElementById("mudaTexto").innerHTML = "Esse texto vai mudar";
+            document.getElementById("mudaTexto").style.color = 'grey';
+        }
+    </script>
+    
+</body>
+</html>
