@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIAVEIS e CONSTANTES</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            PERCEBA QUE CONSTANTES NÃO PODEM TER SEU VALOR ALTERADO
+        */
+
+        document.write("<br><br><br>-----------------------------------------------------------------------------------");
+        document.write("<br> DECLARAÇÕES INICIAIS - VARIAVEL e CONSTANTE");
+        document.write("<br>-----------------------------------------------------------------------------------");
+
+                var numVar = 10;
+                const numConst = 10;
+                document.write("<br><br> Variavel = " + numVar);
+                document.write("<br> Constante = " + numConst);
+
+
+                document.write("<br><br><br>-----------------------------------------------------------------------------------");
+        document.write("<br> TENTANDO MUDAR - VARIAVEL e CONSTANTE");
+        document.write("<br>-----------------------------------------------------------------------------------");
+
+                //mudei o valor da variavel
+                numVar = 20;
+                document.write("<br><br> Variavel = " + numVar);
+
+                try{
+                    //tentei mudar a constante
+                    numConst = 20; 
+                    document.write("<br> Constante = " + numConst);
+                }catch (err){
+                    //Tratamento de Erro - mostra mensagem de erro quando não consegue mudar constante
+                    document.write("<br><br> OCORREU UM ERRO <br><b style='color:red' >" + err + "</b>");
+                }
+        
+        
+
+    </script>
+    
+</body>
+</html>

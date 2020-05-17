@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTANTES SENDO ALTERADAS</title>
+</head>
+<body>
+
+    <script>
+        /*
+            CONSTANT (const)
+            ----------------
+            The value of a constant (CONST) cannot be changed, in principle.
+            However, if the constant is an OBJECT, a JSON or an ARRAY, etc
+            we can change the values of its elements (individually)
+
+
+            SOURCES
+            --------
+            Youtube Channel  - Programador BR - Professor Igor Oliveira - @progrbr
+            https://youtu.be/ZOx7iTnBqFQ
+
+            Youtube Channel  - CollabCode - Professor Marco Bruno - @marcobrunodev
+            https://youtu.be/EFoEqHIwxqY
+
+            Youtube Channel  - freeCodeCamp - Teacher Beau Carnes - @CarnesBeau
+            https://youtu.be/1mgLWu69ijU
+            
+        */
+
+        document.write("<br><br><br>--------------------------------------------");
+        document.write("<br> INITIAL DECLARATION - JSON");
+        document.write("<br>--------------------------------------------");
+
+            const constJSON = {
+                name: 'Marco',
+                age: 30
+            };
+            document.write("<br><br> Constante JSON = " + constJSON.name + ", " + constJSON.age );
+
+        document.write("<br><br><br>--------------------------------------------");
+        document.write("<br> CHANGING CONST - JSON");
+        document.write("<br>--------------------------------------------");
+
+            constJSON.age = 31;
+            document.write("<br><br> Constante JSON = " + constJSON.name + ", " + constJSON.age );
+
+
+
+
+
+
+
+
+
+/*
+        document.write("<br><br><br>--------------------------------------------");
+        document.write("<br> INITIAL DECLARATION");
+        document.write("<br>--------------------------------------------");
+
+                const constanteSimples = 10;
+                document.write("<br><br> Constante Simples = " + constanteSimples);
+
+        
+        document.write("<br><br><br>----------------------------------------------");
+        document.write("<br> TRYING TO CHANGE VALUES");
+        document.write("<br>----------------------------------------------");
+
+            //trying change CONST value
+                try {
+                    constanteSimples = 20;
+                    document.write("<br><br> Constante = " + constanteSimples);
+                } catch (err) {
+                    document.write("<br><br> The Value of Constant can't changed <br> ERRO = <b style='color:red' >" + err + "</b>");
+                }
+
+*/
+    </script>
+    
+</body>
+</html>

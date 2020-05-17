@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIDA - CONFIRM</title>
+</head>
+<body>
+
+    <script>
+        var mensagem;
+        var confirmacao = confirm("Você deseja Confirmar a Ação?");
+        
+        if(confirmacao == true){
+            mensagem = "Usuário CONFIRMOU";
+        }else{
+            mensagem = "Usuário CANCELOU";
+        }
+
+        document.write(mensagem);
+
+    </script>
+    
+</body>
+</html>

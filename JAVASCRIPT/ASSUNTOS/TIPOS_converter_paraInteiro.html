@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Formula</title>
+</head>
+<body>
+
+    
+    Digite o valor de X:<br>
+    <input type="text" id="digitado" ><br>
+    <button onclick="converter()">Mostrar valor de Y</button> 
+    <p id="valorX"></p>
+    <p id="valorY"></p>
+
+
+
+    <script>
+  
+         /*
+            Converting Variables to Numbers
+            -------------------------------
+            There are 3 JavaScript methods that can be used to convert variables to numbers:
+                    The Number() method
+                    The parseInt() method
+                    The parseFloat() method
+            These methods are not number methods, but global JavaScript methods.
+
+            The parseInt() Method
+            ---------------------
+                parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+                Example
+                parseInt("10");         // returns 10
+                parseInt("10.33");      // returns 10
+                parseInt("10 20 30");   // returns 10
+                parseInt("10 years");   // returns 10
+                parseInt("years 10");   // returns NaN  
+
+            SOURCE
+            ------
+            https://www.w3schools.com/js/js_number_methods.asp
+
+
+            CONVERSÃO PARA INTEIRO
+            -----------------------
+            A função que coleta a entrada do form, converte em numero inteiro,
+            e armazena em uma variavel, retornando seu valor.
+            
+        */
+       
+        function converter(){
+            var x = parseInt(document.getElementById('digitado').value);
+            if(!x){
+                document.getElementById('valorX').innerHTML = "Nenhum valor digitado";
+            }else{
+                var y = x + 100;
+                document.getElementById('valorX').innerHTML = "Se o valor de X é " +  x + ", <br>então o valor de Y é " +  y ; 
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
